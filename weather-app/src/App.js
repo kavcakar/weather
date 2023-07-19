@@ -20,7 +20,7 @@ function App() {
       }
     }
     getApi();
-  }, []);
+  }, [search]);
  console.log(search)
   return (
     <div className="App">
@@ -30,7 +30,7 @@ function App() {
   onChange={(e) => setSearch(e.target.value)}
    placeholder="Placeholder"
     class="px-3 w-[250px] py-3 placeholder-bluegray-300 text-bluegray-300 relative bg-white rounded text-sm border-0 shadow outline-none focus:outline-none focus:ring "/>
-     <City  city={city/>
+     <City  city={city}/>
     </div>
 </div>
 );
