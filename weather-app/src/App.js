@@ -23,10 +23,10 @@ function App() {
   return (
     <div className="App">
       <div>
-        <input className="border-8" type="text" />
+        <input onChange={(e) => console.log(e.target.value)} className="border-8 bg-slate-500" type="text" />
       </div>
     </div>
   );
 }
 
-export default App;
+export default App; 
